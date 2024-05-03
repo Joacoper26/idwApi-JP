@@ -1,4 +1,10 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,12 +15,17 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 0;
 }
 
 .navbar {
     display: flex;
     align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
 }
 
 .logo img {
@@ -41,18 +52,22 @@ ul{
 }
 
 .menu li a:hover {
-    text-decoration: underline;
+    background-color: gray;
+    border-radius: 30%;
 }
 
 /* Estilos del contenido principal */
 main {
-    padding: 20px;
+    padding:0;
+    margin: 0;
 }
 
 .info {
     background-color: #f0f0f0;
     padding: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    justify-content: space-around;
 }
 
 .info h3 {
@@ -75,25 +90,38 @@ main {
 .btn:hover {
     background-color: #0056b3;
 }
-
-.contenedor a{
-    justify-content: center;
+.contenedor{
+    max-width: 1200px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
+.hotel{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    flex: 0 1 30%;
+}
+#img1 , #img2, #img3{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
 
 /* Estilos del footer */
 .footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-
     justify-content: space-between;
     align-items: center;
     display: inline-block;
     width: 100%;
-
     text-align: center;
-
 }
 
 .footer .logo img {
@@ -101,59 +129,23 @@ main {
     height: auto;
 }
 
-.footer .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer .menu li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.footer .menu li:last-child {
-    margin-right: 0;
-}
-
-.footer .menu li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer .menu li a:hover {
-    text-decoration: underline;
-
-}
-
-
-
-
 .logo h3{
     color:#fc5474;
     font-family: monospace;
     padding-left: 20px;
 }
 .logo{
-    
     display: flex;
-    
-    
 }
 
 .contact img{
     width: 100%;
     height: 300px; 
-    
 }
-
-
-
 form {
     width: 500px; /* Ancho del formulario */
     margin: 0 auto; /* Centrar el formulario horizontalmente */
-    padding: 20px; /* Espacio interno del formulario */
-    
+    padding: 20px; /* Espacio interno del formulario */   
 }
 
 /* Estilos para las etiquetas de los campos */
@@ -218,11 +210,27 @@ input[type="submit"]:hover {
 
 .iconos{
     display: flex;
-    padding-top:130px ;
-    
+    padding-top:130px ;    
 }
 
 .direccion{
     font-family: monospace;
-=======
+}
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #484848;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+
+.texto{
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.texto h1{
+    color: #333;
 }
